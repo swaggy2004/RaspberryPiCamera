@@ -10,6 +10,7 @@ import time
 cam = PiCamera()
 
 #starting a preview for 6 seconds
-cam.start_preview()
-time.sleep(6)
+cam.start_preview(alpha=200)
+#cam.start_preview(alpha=200) -> this make the camera preview transparent. This fix all the future issues
+time.sleep(10)
 cam.stop_preview()
